@@ -1,0 +1,387 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>AIEN12-project</Name>
+    <RootNamespace>AIEN12-project</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>989fc4a7-456a-4a35-860e-d35439015d40</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="package.json" />
+    <Content Include="public\Dashio\404.html" />
+    <Content Include="public\Dashio\500.html" />
+    <Content Include="public\Dashio\advanced_form_components.html" />
+    <Content Include="public\Dashio\advanced_table.html" />
+    <Content Include="public\Dashio\basic_table.html" />
+    <Content Include="public\Dashio\blank.html" />
+    <Content Include="public\Dashio\buttons.html" />
+    <Content Include="public\Dashio\calendar.html" />
+    <Content Include="public\Dashio\chartjs.html" />
+    <Content Include="public\Dashio\chat_room.html" />
+    <Content Include="public\Dashio\contactform.html" />
+    <Content Include="public\Dashio\contactform\contactform.php" />
+    <Content Include="public\Dashio\contactform\Readme.txt" />
+    <Content Include="public\Dashio\credits.txt" />
+    <Content Include="public\Dashio\css\style-responsive.css" />
+    <Content Include="public\Dashio\css\style.css" />
+    <Content Include="public\Dashio\css\table-responsive.css" />
+    <Content Include="public\Dashio\css\to-do.css" />
+    <Content Include="public\Dashio\css\zabuto_calendar.css" />
+    <Content Include="public\Dashio\dropzone.html" />
+    <Content Include="public\Dashio\faq.html" />
+    <Content Include="public\Dashio\file_upload.html" />
+    <Content Include="public\Dashio\flot_chart.html" />
+    <Content Include="public\Dashio\font_awesome.html" />
+    <Content Include="public\Dashio\form_component.html" />
+    <Content Include="public\Dashio\form_validation.html" />
+    <Content Include="public\Dashio\gallery.html" />
+    <Content Include="public\Dashio\general.html" />
+    <Content Include="public\Dashio\google_maps.html" />
+    <Content Include="public\Dashio\grids.html" />
+    <Content Include="public\Dashio\img\404.png" />
+    <Content Include="public\Dashio\img\500.png" />
+    <Content Include="public\Dashio\img\apple-touch-icon.png" />
+    <Content Include="public\Dashio\img\blog-bg.jpg" />
+    <Content Include="public\Dashio\img\checkbox-gray.png" />
+    <Content Include="public\Dashio\img\favicon.png" />
+    <Content Include="public\Dashio\img\friends\fr-01.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-02.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-03.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-04.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-05.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-06.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-07.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-08.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-09.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-10.jpg" />
+    <Content Include="public\Dashio\img\friends\fr-11.jpg" />
+    <Content Include="public\Dashio\img\instagram.jpg" />
+    <Content Include="public\Dashio\img\login-bg.jpg" />
+    <Content Include="public\Dashio\img\lorde.jpg" />
+    <Content Include="public\Dashio\img\mask.png" />
+    <Content Include="public\Dashio\img\ny.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port01.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port02.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port03.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port04.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port05.jpg" />
+    <Content Include="public\Dashio\img\portfolio\port06.jpg" />
+    <Content Include="public\Dashio\img\product.jpg" />
+    <Content Include="public\Dashio\img\profile-01.jpg" />
+    <Content Include="public\Dashio\img\profile-02.jpg" />
+    <Content Include="public\Dashio\img\radio-gray.png" />
+    <Content Include="public\Dashio\img\ui-danro.jpg" />
+    <Content Include="public\Dashio\img\ui-divya.jpg" />
+    <Content Include="public\Dashio\img\ui-sam.jpg" />
+    <Content Include="public\Dashio\img\ui-sherman.jpg" />
+    <Content Include="public\Dashio\img\ui-zac.jpg" />
+    <Content Include="public\Dashio\img\weather.jpg" />
+    <Content Include="public\Dashio\img\zoom.png" />
+    <Content Include="public\Dashio\inbox.html" />
+    <Content Include="public\Dashio\index - Copy.html" />
+    <Content Include="public\Dashio\index.html" />
+    <Content Include="public\Dashio\inline_editor.html" />
+    <Content Include="public\Dashio\invoice.html" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\demo_page.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\demo_table.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\demo_table_jui.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\DT_bootstrap.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\jquery.dataTables.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\css\jquery.dataTables_themeroller.css" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\back_disabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\back_enabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\back_enabled_hover.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\details_close.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\details_open.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\favicon.ico" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\forward_disabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\forward_enabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\forward_enabled_hover.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\Sorting icons.psd" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\sort_asc.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\sort_asc_disabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\sort_both.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\sort_desc.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\images\sort_desc_disabled.png" />
+    <Content Include="public\Dashio\lib\advanced-datatable\js\DT_bootstrap.js" />
+    <Content Include="public\Dashio\lib\advanced-datatable\js\jquery.dataTables.js" />
+    <Content Include="public\Dashio\lib\advanced-datatable\js\jquery.dataTables.min.js" />
+    <Content Include="public\Dashio\lib\advanced-datatable\js\jquery.js" />
+    <Content Include="public\Dashio\lib\advanced-form-components.js" />
+    <Content Include="public\Dashio\lib\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="public\Dashio\lib\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="public\Dashio\lib\bootstrap-daterangepicker\date.js" />
+    <Content Include="public\Dashio\lib\bootstrap-daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="public\Dashio\lib\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="public\Dashio\lib\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="public\Dashio\lib\bootstrap-daterangepicker\moment.min.js" />
+    <Content Include="public\Dashio\lib\bootstrap-datetimepicker\css\datetimepicker.css" />
+    <Content Include="public\Dashio\lib\bootstrap-datetimepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="public\Dashio\lib\bootstrap-fileupload\bootstrap-fileupload.css" />
+    <Content Include="public\Dashio\lib\bootstrap-fileupload\bootstrap-fileupload.js" />
+    <Content Include="public\Dashio\lib\bootstrap-inputmask\bootstrap-inputmask.min.js" />
+    <Content Include="public\Dashio\lib\bootstrap-switch.js" />
+    <Content Include="public\Dashio\lib\bootstrap-timepicker\compiled\timepicker.css" />
+    <Content Include="public\Dashio\lib\bootstrap-timepicker\js\bootstrap-timepicker.js" />
+    <Content Include="public\Dashio\lib\bootstrap-wysihtml5\bootstrap-wysihtml5.css" />
+    <Content Include="public\Dashio\lib\bootstrap-wysihtml5\bootstrap-wysihtml5.js" />
+    <Content Include="public\Dashio\lib\bootstrap-wysihtml5\wysihtml5-0.3.0.js" />
+    <Content Include="public\Dashio\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="public\Dashio\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="public\Dashio\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\Dashio\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\Dashio\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\Dashio\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\Dashio\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\Dashio\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="public\Dashio\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="public\Dashio\lib\calendar-conf-events.js" />
+    <Content Include="public\Dashio\lib\chart-master\Chart.js" />
+    <Content Include="public\Dashio\lib\chartjs-conf.js" />
+    <Content Include="public\Dashio\lib\ckeditor\ckeditor.js" />
+    <Content Include="public\Dashio\lib\common-scripts.js" />
+    <Content Include="public\Dashio\lib\dropzone\css\dropzone.css" />
+    <Content Include="public\Dashio\lib\dropzone\dropzone.js" />
+    <Content Include="public\Dashio\lib\dropzone\images\spritemap%402x.png" />
+    <Content Include="public\Dashio\lib\dropzone\images\spritemap.png" />
+    <Content Include="public\Dashio\lib\easy-pie-chart.js" />
+    <Content Include="public\Dashio\lib\fancybox\jquery.fancybox.css" />
+    <Content Include="public\Dashio\lib\fancybox\jquery.fancybox.js" />
+    <Content Include="public\Dashio\lib\file-uploader\css\jquery.fileupload-noscript.css" />
+    <Content Include="public\Dashio\lib\file-uploader\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="public\Dashio\lib\file-uploader\css\jquery.fileupload-ui.css" />
+    <Content Include="public\Dashio\lib\file-uploader\css\jquery.fileupload.css" />
+    <Content Include="public\Dashio\lib\file-uploader\img\loading.gif" />
+    <Content Include="public\Dashio\lib\file-uploader\img\progressbar.gif" />
+    <Content Include="public\Dashio\lib\file-uploader\js\cors\jquery.xdr-transport.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-audio.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-image.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-process.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-ui.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-validate.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload-video.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.fileupload.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\jquery.iframe-transport.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\main.js" />
+    <Content Include="public\Dashio\lib\file-uploader\js\vendor\jquery.ui.widget.js" />
+    <Content Include="public\Dashio\lib\flotchart-conf.js" />
+    <Content Include="public\Dashio\lib\flot\jquery.flot.crosshair.js" />
+    <Content Include="public\Dashio\lib\flot\jquery.flot.js" />
+    <Content Include="public\Dashio\lib\flot\jquery.flot.pie.js" />
+    <Content Include="public\Dashio\lib\flot\jquery.flot.resize.js" />
+    <Content Include="public\Dashio\lib\flot\jquery.flot.stack.js" />
+    <Content Include="public\Dashio\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="public\Dashio\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\Dashio\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="public\Dashio\lib\form-component.js" />
+    <Content Include="public\Dashio\lib\form-validation-script.js" />
+    <Content Include="public\Dashio\lib\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="public\Dashio\lib\fullcalendar\fullcalendar.min.js" />
+    <Content Include="public\Dashio\lib\google-maps\data\points.js" />
+    <Content Include="public\Dashio\lib\google-maps\maplace.js" />
+    <Content Include="public\Dashio\lib\gritter-conf.js" />
+    <Content Include="public\Dashio\lib\gritter\css\jquery.gritter.css" />
+    <Content Include="public\Dashio\lib\gritter\css\jquery.gritter0.css" />
+    <Content Include="public\Dashio\lib\gritter\images\gritter-light.png" />
+    <Content Include="public\Dashio\lib\gritter\images\gritter-long.png" />
+    <Content Include="public\Dashio\lib\gritter\images\gritter.png" />
+    <Content Include="public\Dashio\lib\gritter\images\ie-spacer.gif" />
+    <Content Include="public\Dashio\lib\gritter\js\jquery.gritter.js" />
+    <Content Include="public\Dashio\lib\jquery-easy-pie-chart\jquery.easy-pie-chart.css" />
+    <Content Include="public\Dashio\lib\jquery-easy-pie-chart\jquery.easy-pie-chart.js" />
+    <Content Include="public\Dashio\lib\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="public\Dashio\lib\jquery.backstretch.min.js" />
+    <Content Include="public\Dashio\lib\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="public\Dashio\lib\jquery.nicescroll.js" />
+    <Content Include="public\Dashio\lib\jquery.scrollTo.min.js" />
+    <Content Include="public\Dashio\lib\jquery.sparkline.js" />
+    <Content Include="public\Dashio\lib\jquery.tagsinput.js" />
+    <Content Include="public\Dashio\lib\jquery.ui.touch-punch.min.js" />
+    <Content Include="public\Dashio\lib\jquery\jquery.js" />
+    <Content Include="public\Dashio\lib\jquery\jquery.min.js" />
+    <Content Include="public\Dashio\lib\morris-conf.js" />
+    <Content Include="public\Dashio\lib\morris\morris.min.js" />
+    <Content Include="public\Dashio\lib\php-mail-form\validate.js" />
+    <Content Include="public\Dashio\lib\raphael\raphael.min.js" />
+    <Content Include="public\Dashio\lib\sparkline-chart.js" />
+    <Content Include="public\Dashio\lib\tasks.js" />
+    <Content Include="public\Dashio\lib\xchart\d3.v3.min.js" />
+    <Content Include="public\Dashio\lib\xchart\xcharts.css" />
+    <Content Include="public\Dashio\lib\xchart\xcharts.min.js" />
+    <Content Include="public\Dashio\lib\zabuto_calendar.js" />
+    <Content Include="public\Dashio\lobby.html" />
+    <Content Include="public\Dashio\lock_screen.html" />
+    <Content Include="public\Dashio\login.html" />
+    <Content Include="public\Dashio\mail_compose.html" />
+    <Content Include="public\Dashio\mail_view.html" />
+    <Content Include="public\Dashio\morris.html" />
+    <Content Include="public\Dashio\panels.html" />
+    <Content Include="public\Dashio\pricing_table.html" />
+    <Content Include="public\Dashio\profile.html" />
+    <Content Include="public\Dashio\Readme.txt" />
+    <Content Include="public\Dashio\responsive_table.html" />
+    <Content Include="public\Dashio\todo_list.html" />
+    <Content Include="public\Dashio\xchart.html" />
+    <Content Include="public\static\css\bootstrap.min.css" />
+    <Content Include="public\static\css\lineicons.css" />
+    <Content Include="public\static\css\style.css" />
+    <Content Include="public\static\css\vlt-main.min.css" />
+    <Content Include="public\static\css\vlt-plugins.min.css" />
+    <Content Include="public\static\fonts\gilroy-medium.woff" />
+    <Content Include="public\static\fonts\gilroy-regular.woff" />
+    <Content Include="public\static\fonts\gilroy-semibold.woff" />
+    <Content Include="public\static\fonts\lineiconspro regular.eot" />
+    <Content Include="public\static\fonts\lineiconspro regular.svg" />
+    <Content Include="public\static\fonts\lineiconspro regular.ttf" />
+    <Content Include="public\static\fonts\lineiconspro regular.woff" />
+    <Content Include="public\static\fonts\lineiconspro regular.woff2" />
+    <Content Include="public\static\js\jquery-3.5.1.min.js" />
+    <Content Include="public\static\js\vlt-controllers.min.js" />
+    <Content Include="public\static\js\vlt-helpers.js" />
+    <Content Include="public\static\js\vlt-plugins.min.js" />
+    <Content Include="public\static\picture\bakeground.png" />
+    <Content Include="public\static\picture\behance.png" />
+    <Content Include="public\static\picture\blog-01.jpg" />
+    <Content Include="public\static\picture\blog-02.jpg" />
+    <Content Include="public\static\picture\blog-03.jpg" />
+    <Content Include="public\static\picture\cell.png" />
+    <Content Include="public\static\picture\contact.jpg" />
+    <Content Include="public\static\picture\envato.png" />
+    <Content Include="public\static\picture\home-mobile.jpg" />
+    <Content Include="public\static\picture\home.jpg" />
+    <Content Include="public\static\picture\logo-01.png" />
+    <Content Include="public\static\picture\logo-02.png" />
+    <Content Include="public\static\picture\logo-03.png" />
+    <Content Include="public\static\picture\logo-04.png" />
+    <Content Include="public\static\picture\logo-05.png" />
+    <Content Include="public\static\picture\logo-06.png" />
+    <Content Include="public\static\picture\logo-07.png" />
+    <Content Include="public\static\picture\logo-08.png" />
+    <Content Include="public\static\picture\logo.svg" />
+    <Content Include="public\static\picture\project-01.jpg" />
+    <Content Include="public\static\picture\project-02.jpg" />
+    <Content Include="public\static\picture\project-03.jpg" />
+    <Content Include="public\static\picture\testimonials.jpg" />
+    <Content Include="public\static\picture\twitter.png" />
+    <Content Include="README.md" />
+    <Content Include="service\bot.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="service\main.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="service\sql.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\pages\add.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\pages\bot.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\pages\index.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\pages\photoshow.ejs">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\Dashio\" />
+    <Folder Include="public\Dashio\contactform\" />
+    <Folder Include="public\Dashio\css\" />
+    <Folder Include="public\Dashio\img\" />
+    <Folder Include="public\Dashio\img\friends\" />
+    <Folder Include="public\Dashio\img\portfolio\" />
+    <Folder Include="public\Dashio\lib\" />
+    <Folder Include="public\Dashio\lib\advanced-datatable\" />
+    <Folder Include="public\Dashio\lib\advanced-datatable\css\" />
+    <Folder Include="public\Dashio\lib\advanced-datatable\images\" />
+    <Folder Include="public\Dashio\lib\advanced-datatable\js\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datepicker\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datepicker\css\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datepicker\js\" />
+    <Folder Include="public\Dashio\lib\bootstrap-daterangepicker\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datetimepicker\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datetimepicker\css\" />
+    <Folder Include="public\Dashio\lib\bootstrap-datetimepicker\js\" />
+    <Folder Include="public\Dashio\lib\bootstrap-fileupload\" />
+    <Folder Include="public\Dashio\lib\bootstrap-inputmask\" />
+    <Folder Include="public\Dashio\lib\bootstrap-timepicker\" />
+    <Folder Include="public\Dashio\lib\bootstrap-timepicker\compiled\" />
+    <Folder Include="public\Dashio\lib\bootstrap-timepicker\js\" />
+    <Folder Include="public\Dashio\lib\bootstrap-wysihtml5\" />
+    <Folder Include="public\Dashio\lib\bootstrap\" />
+    <Folder Include="public\Dashio\lib\bootstrap\css\" />
+    <Folder Include="public\Dashio\lib\bootstrap\fonts\" />
+    <Folder Include="public\Dashio\lib\bootstrap\js\" />
+    <Folder Include="public\Dashio\lib\chart-master\" />
+    <Folder Include="public\Dashio\lib\ckeditor\" />
+    <Folder Include="public\Dashio\lib\dropzone\" />
+    <Folder Include="public\Dashio\lib\dropzone\css\" />
+    <Folder Include="public\Dashio\lib\dropzone\images\" />
+    <Folder Include="public\Dashio\lib\fancybox\" />
+    <Folder Include="public\Dashio\lib\file-uploader\" />
+    <Folder Include="public\Dashio\lib\file-uploader\css\" />
+    <Folder Include="public\Dashio\lib\file-uploader\img\" />
+    <Folder Include="public\Dashio\lib\file-uploader\js\" />
+    <Folder Include="public\Dashio\lib\file-uploader\js\cors\" />
+    <Folder Include="public\Dashio\lib\file-uploader\js\vendor\" />
+    <Folder Include="public\Dashio\lib\flot\" />
+    <Folder Include="public\Dashio\lib\font-awesome\" />
+    <Folder Include="public\Dashio\lib\font-awesome\css\" />
+    <Folder Include="public\Dashio\lib\font-awesome\fonts\" />
+    <Folder Include="public\Dashio\lib\fullcalendar\" />
+    <Folder Include="public\Dashio\lib\google-maps\" />
+    <Folder Include="public\Dashio\lib\google-maps\data\" />
+    <Folder Include="public\Dashio\lib\gritter\" />
+    <Folder Include="public\Dashio\lib\gritter\css\" />
+    <Folder Include="public\Dashio\lib\gritter\images\" />
+    <Folder Include="public\Dashio\lib\gritter\js\" />
+    <Folder Include="public\Dashio\lib\jquery-easy-pie-chart\" />
+    <Folder Include="public\Dashio\lib\jquery\" />
+    <Folder Include="public\Dashio\lib\morris\" />
+    <Folder Include="public\Dashio\lib\php-mail-form\" />
+    <Folder Include="public\Dashio\lib\raphael\" />
+    <Folder Include="public\Dashio\lib\xchart\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\json\" />
+    <Folder Include="public\static\" />
+    <Folder Include="public\static\css\" />
+    <Folder Include="public\static\fonts\" />
+    <Folder Include="public\static\js\" />
+    <Folder Include="public\static\picture\" />
+    <Folder Include="views\" />
+    <Folder Include="service\" />
+    <Folder Include="public\" />
+    <Folder Include="views\pages\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+</Project>
