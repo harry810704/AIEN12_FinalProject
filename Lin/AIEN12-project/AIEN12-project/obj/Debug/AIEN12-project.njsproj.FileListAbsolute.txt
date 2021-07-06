@@ -1,3 +1,0 @@
-C:\Users\User\source\repos\AIEN12-project\AIEN12-project\obj\Debug\AIEN12-project.njsprojAssemblyReference.cache
-C:\Users\User\source\repos\AIEN12-project\AIEN12-project\obj\Debug\AIEN12-project.njsproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\AIEN12-project\AIEN12-project\bin\Microsoft.NodejsTools.WebRole.dll
