@@ -1,0 +1,21 @@
+{
+  "name": "aien12-project",
+  "version": "0.0.0",
+  "description": "AIEN12-project",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.7.0",
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fs": "*",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-calls-python": "^1.4.0"
+  }
+}
